@@ -1,0 +1,7 @@
+project_id = "pjnycedmethsmwblqfgv"
+
+[functions.shorten-url]
+verify_jwt = false
+
+[functions.redirect-url]
+verify_jwt = false
