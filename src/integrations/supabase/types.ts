@@ -14,30 +14,7 @@ export type Database = {
   }
   public: {
     Tables: {
-      shortened_urls: {
-        Row: {
-          click_count: number | null
-          created_at: string
-          id: string
-          original_url: string
-          short_code: string
-        }
-        Insert: {
-          click_count?: number | null
-          created_at?: string
-          id?: string
-          original_url: string
-          short_code: string
-        }
-        Update: {
-          click_count?: number | null
-          created_at?: string
-          id?: string
-          original_url?: string
-          short_code?: string
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
